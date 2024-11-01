@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --top-head-color: #dcfbb7; /* #f8ede3; */
+}
+
 @layer base {
   h1 {
     @apply text-xl;
@@ -11,6 +15,9 @@
 @layer components {
   .hero {
     @apply font-bungee text-[clamp(3rem,7cqi,15.1rem)] font-[100] leading-[4.5rem];
+  }
+  .top-head {
+    @apply w-fit border-t-[2.5px] border-t-[var(--top-head-color)] pt-[7.5px] font-semibold text-[0.9rem] text-[var(--top-head-color)] font-cozette;
   }
 }
 

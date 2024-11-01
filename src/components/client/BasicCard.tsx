@@ -1,3 +1,5 @@
+import TopBorderHead from "@/components/client/TopBorderHead";
+
 type BasicCardProps = {
   title: string;
   value: string;
@@ -5,9 +7,9 @@ type BasicCardProps = {
 
 const BasicCard = ({ title, value }: BasicCardProps) => {
   return (
-    <section>
-      <h2>{title}</h2>
-      <span>{value}</span>
+    <section className="flex flex-col">
+      <TopBorderHead title={title} />
+      <span className="text-[0.8rem] font-semibold">{value}</span>
     </section>
   );
 };
