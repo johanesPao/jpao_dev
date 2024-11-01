@@ -8,6 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        monaspace: ["var(--font-monaspaceNeonRegular)"],
+        bungee: ["var(--font-bungee-hairline)"],
+        novamono: ["var(--font-nova-mono)"],
+        cozette: ["var(--font-cozette)"],
+        barcode: ["var(--font-libre-barcode)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
